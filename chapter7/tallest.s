@@ -1,7 +1,9 @@
 .global _start
 .section .text
 _start:
-    ### Initialize Registers @@@
+    # this file must be linked with persondata.s
+
+    ### Initialize Registers ###
 
     # Pointer to first record
     leaq people, %rbx
